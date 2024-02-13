@@ -28,13 +28,14 @@ app.post('/generate-text', async(req, res) => {
                 "content": prompt
             }
         ],
-        max_tokens: 50
+        max_tokens: 250
     });
     // console.log(response.choices[0].message)
     const generatedText = response.choices[0].message;
     res.json({
         message: 'Text generation request received',
-        data: generatedText
+        data: response,
+        generatedText: generatedText,
     });
 });
 
