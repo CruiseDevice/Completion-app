@@ -1,0 +1,35 @@
+/* Style for the text box */
+input[type="text"] {
+    width: 80%;
+    /* Or the width you prefer */
+    padding: 10px;
+    /* Adjust the padding as needed */
+    margin: 8px 0;
+    /* Spacing above and below the text box */
+    display: inline-block;
+    border: 1px solid #ccc;
+    /* Light grey border */
+    border-radius: 4px;
+    /* Rounded borders */
+    box-sizing: border-box;
+    /* To include padding in the width */
+}
+
+/* Style for the button */
+input[type="submit"] {
+    width: 15%;
+    /* Or the width you prefer */
+    background-color: #4CAF50;
+    /* Button color */
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+    /* Slightly darker shade on hover */
+}
