@@ -1,3 +1,43 @@
 .container {
-  
+    font-family: 'Arial', sans-serif;
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Adds a subtle shadow */
+    border-radius: 8px;
+    /* Rounded corners */
+    background: #f9f9f9;
+    /* Light grey background */
+}
+
+.inputText {
+    padding: 10px;
+    margin-bottom: 10px;
+    background: skyblue;
+    border-radius: 4px;
+}
+
+/* Style for the output text display */
+.generatedText {
+    padding: 10px;
+    margin-bottom: 10px;
+    background: lightgreen;
+    /* Even slightly darker grey background */
+    border-radius: 4px;
+}
+
+.serverResponse {
+    padding: 10px;
+    background: lightgrey;
+    /* Slightly darker grey background */
+    border-radius: 4px;
+    white-space: pre-wrap;
+    /* Ensures the formatting of whitespaces and new lines */
+    word-wrap: break-word;
+    /* Break words to prevent horizontal scrolling */
+    overflow-x: auto;
+    /* Adds horizontal scroll if needed */
+    font-family: 'Courier New', monospace;
+    /* Monospace font for JSON */
 }

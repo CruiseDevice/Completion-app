@@ -20,11 +20,13 @@ export default function Home() {
     });
     const data = await response.json();
     console.log(data.data);
+    setServerResponse(JSON.stringify(data, null, 2));
     setGeneratedText(data.generatedText.content);
   }
 
   return (
     <div className={styles.container}>
+      <center><h2>Completion App</h2></center>
       <form onSubmit={handleSubmit}>
         <input type="text" value={text} onChange={(e) => setText(e.target.value)} name="text"/>
         <input type="submit" />
@@ -36,7 +38,7 @@ export default function Home() {
         {text} {generatedText}
       </div>
       <div className={styles.serverResponse}>
-        {/* {serverResponse} */}
+        {serverResponse}
       </div>
     </div>
   );
