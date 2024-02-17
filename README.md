@@ -3,7 +3,7 @@ A completion example using the OpenAI completion API.
 
 <ins>Backend</ins>
 
-- Create .env in root directory
+- Create .env in backend directory
 - Put the following in .env
 
 ```
